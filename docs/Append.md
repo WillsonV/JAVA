@@ -43,14 +43,19 @@ var Elements = ["C", "C++", "Java","Python","R","Perl","C#","PHP"];
 	 function AddNewElementUsingString()
               {
 			   var NodesString="";
+			  
 			   for (var i=0;i<Elements.length; i++) 
 							 {
+				
 							 NodesString+="<li>"+Elements[i]+"</li>";
 
                             }
 							
 				 var UlElement= document.getElementById('Languages');
-			                UlElement.innerHTML=NodesString;			
+			             	
+			    $("#Languages").append(NodesString);	
+			   
+						   
 			  
 			  
 			  }	 
